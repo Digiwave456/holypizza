@@ -12,8 +12,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="">
-        <div>
+    <body class="" style="min-height: 100vh; display: flex; flex-direction: column;">
+        <div style="flex: 1 0 auto;">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -30,46 +30,39 @@
                 @yield('content')
             </main>
         </div>
-        <footer class="footer" style=" left: 0; bottom: 0; width: 100%;">
-        <div class="container footer-container">
-            <div class="footer-section">
-                
-                <h4>О нас</h4>
-                <p>HolyPizza - лучшая пицца в Ульяновске! Мы готовим пиццу с любовью и используем только свежие ингредиенты.</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Контакты</h4>
-                <p><i class="fas fa-map-marker-alt"></i> пр-т Созидателей 13</p>
-                <p><i class="fas fa-phone"></i> +7 (8222) 45 65 67</p>
-                <p><i class="fas fa-envelope"></i> holypizza@gmail.com</p>
-                <p><i class="fas fa-clock"></i> Ежедневно с 10:00 до 23:00</p>
-            </div>
-
-            <div class="footer-section">
-                <h4>Наши соцсети</h4>
-                <div class="social-links">
-                    <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
-                    <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+        <footer class="footer" style="flex-shrink: 0; width: 100%;">
+            <div class="container footer-container">
+                <div class="footer-section">
+                    <h4>О нас</h4>
+                    <p>HolyPizza - лучшая пицца в Ульяновске! Мы готовим пиццу с любовью и используем только свежие ингредиенты.</p>
                 </div>
-                <p>@holypizza</p>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> пр-т Созидателей 13</p>
+                    <p><i class="fas fa-phone"></i> +7 (8222) 45 65 67</p>
+                    <p><i class="fas fa-envelope"></i> holypizza@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Ежедневно с 10:00 до 23:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Наши соцсети</h4>
+                    <div class="social-links">
+                        <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <p>@holypizza</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Полезные ссылки</h4>
+                    <p><a href="/catalog" style="color: #cccccc; text-decoration: none;">Каталог</a></p>
+                    <p><a href="/cart" style="color: #cccccc; text-decoration: none;">Корзина</a></p>
+                    <p><a href="/delivery" style="color: #cccccc; text-decoration: none;">Доставка</a></p>
+                    <p><a href="/about" style="color: #cccccc; text-decoration: none;">О нас</a></p>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h4>Полезные ссылки</h4>
-                <p><a href="/catalog" style="color: #cccccc; text-decoration: none;">Каталог</a></p>
-                <p><a href="/cart" style="color: #cccccc; text-decoration: none;">Корзина</a></p>
-                <p><a href="/delivery" style="color: #cccccc; text-decoration: none;">Доставка</a></p>
-                <p><a href="/about" style="color: #cccccc; text-decoration: none;">О нас</a></p>
+            <div class="footer-bottom">
+                <p>&copy; {{ date('Y') }} HolyPizza. Все права защищены.</p>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; {{ date('Y') }} HolyPizza. Все права защищены.</p>
-        </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   
     </body>
-    
-    </footer>
 </html>
