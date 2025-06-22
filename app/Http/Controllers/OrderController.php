@@ -117,7 +117,7 @@ class OrderController extends Controller
             }
 
             $goodOrders[] = (object)[
-                'name' => $user->surname . ' ' . $user->name . ' ' . $user->patronymic,
+                'name' => $user ? ($user->surname . ' ' . $user->name . ' ' . $user->patronymic) : 'Неизвестный пользователь',
                 'number' => $openedOrder[0]->number,
                 'products' => $products,
                 'date' => $openedOrder[0]->created_at,

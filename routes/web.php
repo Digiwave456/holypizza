@@ -23,6 +23,7 @@ use App\Http\Controllers\FeedbackController;
 
 // Маршруты для страниц
 Route::get('/', [AboutController::class, 'index'])->name('about');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/catalog', [CatalogController::class, 'getProducts'])->name('catalog');
 Route::get('/catalog/search', [CatalogController::class, 'getProducts'])->name('catalog.search');
 Route::get('/catalog/live-search', [CatalogController::class, 'liveSearch'])->name('catalog.live-search');
