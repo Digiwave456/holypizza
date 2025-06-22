@@ -25,12 +25,26 @@
                             <i class="bi bi-envelope me-2"></i>holypizza@mail.ru
                         </a>
                     </div>
-                    <div class="text-center mt-4">
-                        <span class="badge bg-danger bg-gradient fs-6 p-3 shadow" style="border-radius: 20px;">Работаем ежедневно с 10:00 до 23:00</span>
+                    <div class="text-center mt-4 worktime-badge">
+                        <span class="badge bg-danger bg-gradient fs-6 p-3 shadow" style="border-radius: 20px; white-space: normal; word-break: break-word;">
+                            Работаем ежедневно с 10:00 до 23:00
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+@media (max-width: 576px) {
+    .worktime-badge .badge {
+        font-size: 1rem !important;
+        padding: 10px !important;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
 @endsection
