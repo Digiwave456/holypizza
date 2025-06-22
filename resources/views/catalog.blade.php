@@ -52,7 +52,7 @@
             @if(count($products) > 0)
                 @foreach($products as $product)
                     <div class="card catalog__item">
-                        <img src="{{ Vite::asset('resources/media/images/') . $product->img }}" alt="{{ $product->title }}" class="card-img-top">
+                        <img src="/images/{{ $product->img }}" alt="{{ $product->title }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->title }}</h5>
                             <p class="card-text">{{ $product->price }} руб.</p>

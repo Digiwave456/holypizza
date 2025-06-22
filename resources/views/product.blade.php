@@ -4,7 +4,7 @@
     <div class="product">
         <div class="container">
         <a href="/product/{{ $product->id }}">
-            <img src="{{ Vite::asset('resources/media/images/') . $product->img }}" alt="" class="product__image">
+            <img src="/images/{{ $product->img }}" alt="" class="product__image">
             <div class="product__main-info">
                 <div class="product__title">{{ $product->title }}</div>
                 <div class="product__price">{{ $product->price }} руб.</div>

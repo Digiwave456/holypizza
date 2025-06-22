@@ -12,7 +12,7 @@
             <tbody>
                 @foreach($products as $product)
                     <tr class="cart__raw">
-                        <td><img src="{{ Vite::asset('resources/media/images/') . $product->img }}" alt="" srcset="" width="100px"></td>
+                        <td><img src="/images/{{ $product->img }}" alt="" srcset="" width="100px"></td>
                         <td>{{ $product->title }}</td>
                         <td>{{ $product->product_type }}</td>
                         <td>{{ $product->qty }}</td>

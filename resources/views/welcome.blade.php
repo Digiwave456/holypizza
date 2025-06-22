@@ -16,17 +16,17 @@
 <div class="carousel-container">
     <div class="carousel">
         <div class="carousel-item active">
-        <img src="{{ Vite::asset('resources/media/images/bannerio.png')}}" 
+        <img src="/images/bannerio.png" 
                               
                              class="new-product__image">
         </div>
         <div class="carousel-item">
-        <img src="{{ Vite::asset('resources/media/images/banner2.jpg' )}}" 
+        <img src="/images/banner2.jpg" 
                             
                              class="new-product__image">
         </div>
         <div class="carousel-item">
-        <img src="{{ Vite::asset('resources/media/images/banner3.jpg')  }}" 
+        <img src="/images/banner3.jpg"  
                              
                              class="new-product__image">
         </div>
@@ -46,7 +46,7 @@
                 @foreach($newProducts as $product)
                 <div class="new-product__card">
                     <div class="new-product__image-container">
-                        <img src="{{ Vite::asset('resources/media/images/' . $product->img) }}" 
+                        <img src="/images/{{ $product->img }}" 
                              alt="{{ $product->title }}" 
                              class="new-product__image">
                         <div class="new-product__badge">HOT!</div>
