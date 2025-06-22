@@ -58,7 +58,7 @@
                             <a href="/product/{{ $product->id }}" class="btn btn-outline-success">Подробнее</a>
                             @auth
                                 <button onclick="addToCart({{ $product->id }})" class="btn cart-red-btn">
-                                    <i class="fas fa-shopping-cart"></i>
+                                    <!-- <i class="fas fa-shopping-cart"></i> -->
                                 </button>
                             @endauth
                         </div>
@@ -243,8 +243,9 @@ function addToCart(productId) {
     background: #d10000 !important;
 }
 .cart-red-btn .fa-shopping-cart {
-    color: #fff !important;
-    font-size: 20px;
+    /* color: #fff !important;
+    font-size: 20px; */
+    display: none;
 }
 </style>
 
