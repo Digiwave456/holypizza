@@ -57,9 +57,7 @@
                         <div class="new-product__actions">
                             <a href="/product/{{ $product->id }}" class="btn btn-outline-success">Подробнее</a>
                             @auth
-                                <button onclick="addToCart({{ $product->id }})" class="btn cart-red-btn">
-                                    <!-- <i class="fas fa-shopping-cart"></i> -->
-                                </button>
+                                <!-- Кнопка корзины удалена -->
                             @endauth
                         </div>
                     </div>
