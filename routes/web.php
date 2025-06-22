@@ -65,6 +65,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit'); // Страница редактирования
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update'); // Обновление профиля
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy'); // Удаление профиля
+    Route::get('/user', [ProfileController::class, 'index'])->name('user');
+
 
     // Корзина
     Route::post('/add-to-cart', [CartController::class, 'addToCart']);
